@@ -23,6 +23,10 @@ a {
     align-items: center;
     background-color: rgb(255, 102, 0);
   }
+
+  html {
+    font-family: 'Times New Roman', serif;
+  }
   
   .article {
     display: flex;
@@ -75,6 +79,34 @@ a {
     max-height:100%;
     text-align: center;
   }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  .form__button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+
+  .form__label {
+    font-weight: bold;
+  }
+
+  .form__input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
   
   .grid {
     display: grid;
@@ -102,6 +134,25 @@ a {
   .navigation__option--float {
     display: inline;
     float: right;
+  }
+
+  .signup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .subheading {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
   }
   
   .title {
@@ -185,6 +236,16 @@ a {
   {
     .grid {
       grid-template-columns: 1fr 1fr 1fr
+    }
+
+    .subheading {
+      font-size: 3em;
+      line-height: 1.2em;
+    }
+
+    .signup {
+      max-width: 600px;
+      padding: 30px;
     }
   }
   
