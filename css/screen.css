@@ -69,6 +69,12 @@ a {
     width: 100%;
     height: auto;
   }
+
+  .comment_block__image {
+    max-width: 100%;
+    max-height:100%;
+    text-align: center;
+  }
   
   .grid {
     display: grid;
@@ -125,6 +131,11 @@ a {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
+  }
+
+  .wrap--comment_block {
+    align-items: center;
+    justify-content: center;
   }
   
   .wrap--front {
