@@ -120,7 +120,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 0.25em;
     background-color: rgb(246, 246, 239);
   }
   
@@ -134,17 +133,19 @@ a {
     padding-left: 0.25em;
     padding-right: 0.25em;
     transition: all 0.25s;
+    border-top-left-radius: 10px;
+  }
+
+  .navigation__option--selected {
+    border-bottom-width: 0.25em;
+    border-bottom-color: black;
+    border-bottom-style: solid;
   }
 
   .navigation__option:hover {
     background-color: rgb(255, 102, 0);
     color: rgb(246, 246, 239);
     transition: all 0.25s;
-  }
-  
-  .navigation__option--float {
-    display: inline;
-    float: right;
   }
 
   .signup {
