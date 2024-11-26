@@ -59,3 +59,43 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 102, 0);
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1.0em;
+  background-color: rgb(246, 246, 239);
+}
+
+.navigation__option {
+  font-size: 1em;
+  line-height: 1.2em;
+  color: rgb(255, 102, 0);
+  text-decoration: none;
+}
+
+.title {
+  margin-bottom: 0.5em;
+  font-size: 2.168em;
+  line-height: 1.2em;
+}
+
+.wrap {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap--navigation {
+  justify-content: space-around;
+}
