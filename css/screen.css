@@ -133,7 +133,6 @@ a {
     padding-left: 0.25em;
     padding-right: 0.25em;
     transition: all 0.25s;
-    border-top-left-radius: 10px;
   }
 
   .navigation__option--selected {
