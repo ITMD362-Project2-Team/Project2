@@ -29,10 +29,21 @@ a {
   }
   
   .article {
+    position: relative;
+    top: 0;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
     background-color: rgb(246, 246, 239, 0.20);
+  }
+
+  .article--other {
+    transition: all 0.25s ease-in-out;
+  }
+
+  .article--other:hover {
+    top: -0.5em;
+    transition: all 0.25s ease-in-out;
   }
   
   .article--front_page {
