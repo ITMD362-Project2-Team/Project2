@@ -165,15 +165,25 @@ a {
   
   .navigation {
     width: 100%;
-    display: none;
+    display: flex;
+    height: 0;
     flex-direction: row;
     justify-content: center;
     background-color: rgb(246, 246, 239);
+    position: relative;
+  }
+
+  .navigation--open {
+    height: fit-content;
+  }
+
+  .navigation--open > .wrap--navigation {
+    flex-direction: column;
   }
   
   .navigation__option {
     font-family: 'Tomorrow', sans-serif;
-    font-size: 1em;
+    font-size: 1.168em;
     line-height: 1.2em;
     color: rgb(255, 102, 0);
     text-decoration: none;
@@ -181,19 +191,22 @@ a {
     padding-bottom: 0.25em;
     padding-left: 0.25em;
     padding-right: 0.25em;
-    transition: all 0.25s;
+    transition: background-color 0.25s;
+    transition: color 0.25s;
   }
 
   .navigation__option--selected {
-    border-bottom-width: 0.25em;
-    border-bottom-color: black;
-    border-bottom-style: solid;
+    border-color: transparent;
+    border-width: 0.25em;
+    border-right-color: black;
+    border-style: solid;
   }
 
   .navigation__option:hover {
     background-color: rgb(255, 102, 0);
     color: rgb(246, 246, 239);
-    transition: all 0.25s;
+    transition: background-color 0.25s;
+    transition: color 0.25s;
   }
 
   .signup {
@@ -289,7 +302,10 @@ a {
   
   .wrap--navigation {
     justify-content: space-around;
+    row-gap: 2em;
   }
+
+  
   
   @media only screen and (min-width:480px)
   {
@@ -312,7 +328,12 @@ a {
     }
 
     .navigation {
-      display: flex;
+      height: fit-content;
+    }
+
+    .navigation__option--selected {
+      border-right-color: transparent;
+      border-bottom-color: black;
     }
 
     .title {
@@ -330,6 +351,15 @@ a {
       height: fit-content;
       flex-grow: 0;
       flex-shrink: 0;
+    }
+
+    .navigation--open > .wrap--navigation {
+      flex-direction: row;
+    }
+
+    .navigation__option {
+      font-size: 1em;
+      line-height: 1.2em;
     }
   }
   
