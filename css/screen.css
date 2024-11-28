@@ -150,9 +150,9 @@ a {
   }
 
   .form__input {
-    width: 90%; 
+    width: 95%; 
     max-width: 100%; 
-    margin: 0 auto; 
+    align-self: center;
   }
 
   .grid {
@@ -212,6 +212,8 @@ a {
   .signup {
     background-color: white;
     padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 400px;
