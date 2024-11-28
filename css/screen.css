@@ -143,6 +143,7 @@ a {
     border-radius: 4px;
     font-size: 1em;
     margin-top: 15px;
+    align-self: center;
   }
 
   .form__label {
@@ -150,8 +151,7 @@ a {
   }
 
   .form__input {
-    width: 95%; 
-    max-width: 100%; 
+    width: 95%;  
     align-self: center;
   }
 
@@ -216,8 +216,8 @@ a {
     padding-right: 0;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
     width: 100%;
+    max-width: 600px;
     text-align: center;
     margin: auto;
   }
@@ -329,6 +329,14 @@ a {
       display: none;
     }
 
+    .form__button {
+      width: 300px;
+    }
+
+    .form__input {
+      width: 350px;
+    }
+
     .navigation {
       height: fit-content;
     }
@@ -371,31 +379,18 @@ a {
   
   @media only screen and (min-width:768px)
   {
-    .form__input {
-      width: 50%; 
-    }
 
     .grid {
       grid-template-columns: 1fr 1fr 1fr
     }
 
-    .subheading {
-      font-size: 3em;
-      line-height: 1.2em;
-    }
-
     .signup {
-      max-width: 600px;
       padding: 30px;
     }
   }
   
   @media only screen and (min-width:992px)
   {
-    .form__input {
-      width: 40%; 
-    }
-
     .wrap--front {
       column-gap: 20px;
     }
